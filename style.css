@@ -25,7 +25,6 @@ body {
     border: 1px solid #dbdbdb;
     width: min(100% - 3rem, 40.2ch);
     background-color: #ffffff;
-    overflow: hidden;
 }
 
 .card {
@@ -203,6 +202,14 @@ body {
 .end__store #play {
     width: 134px;
     margin: 5px;
+}
+
+/* media query for smaller screen */
+@media screen and (max-width: 450px) {
+
+    .card {
+        border: none;
+    }
 }
 
 .end__store #micro {
