@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Segoe UI, Noto Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container-centre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.card {
+    border: 1px solid #dbdbdb;
+    width: min(100% - 3rem, 40.2ch);
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card__logo-insta img {
+    margin-top: 22px;
+    width: 235px;
+    height: 100px;
+}
+
+.card__form {
+    padding: 7.3px 40px;
+    width: 100%;
+}
+
+/* form */
+
+.__form {
+    width: 100%;
+    margin: 3px 0px;
+    font-family: Segoe UI, Noto Sans;
+    font-weight: 400;
+}
+
+.form__input {
+    border: 1px solid #dbdbdb;
+    background-color: #fafafa;
+    font-size: 12px;
+    padding: 8px;
+    height: 37px;
+    border-radius: 3px;
+}
+
+.form__input:focus {
+    outline: none;
+    border: 1px solid #a9a9a9;
+}
+
+.form__btn {
+    margin: 12px 0px;
+    border: 0;
+    height: 32px;
+    background-color: #4cb5f9;
+    border-radius: 8px;
+    color: #f9fdff;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* form when filled */
+
+.pointer-cursor {
+    cursor: pointer;
+}
+
+.btn-filled {
+    background-color: #0095f6;
+    color: #fff;
+}
+
+.btn-filled:hover {
+    background-color: #1877f2;
+}
+
+/* break after form */
+
+.card__break {
+    width: 100%;
+    margin-top: -2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.break {
+    background-color: #dbdbdb;
+    height: 1px;
+    width: 30%;
+    margin-top: 6.5px;
+}
+
+.break__left {
+    margin-left: 40px;
+}
+
+.break__right {
+    margin-right: 40px;
+}
+
+.card__break p {
+    display: inline;
+    color: #737373;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* login with facebook */
+
+.face__forget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 26px;
+}
+
+.face {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.face a {
+    text-decoration: none;
+    color: #385185;
+}
+
+.face img {
+    width: 16px;
+    margin-right: 8px;
+}
+
+.forget {
+    font-size: 13px;
+    margin-top: 18px;
+    margin-bottom: 21px;
+}
+
+.forget a {
+    text-decoration: none;
+    color: #00376b;
+}
+
+/* sign up */
+
+.card__bottom {
+    margin-top: 9.5px;
+}
+
+.card__bottom p {
+    font-size: 14px;
+    padding: 21.25px 0px;
+}
+
+.card__bottom a {
+    color: #0095f6;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.card__end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+/* get app store */
+
+.end__store {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 11.5px;
+}
+
+.end__store #play {
+    width: 134px;
+    margin: 5px;
+}
+
+.end__store #micro {
+    width: 110px;
+    margin: 5px;
+}

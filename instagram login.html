@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rahul Raj (lisztomania23)">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/Instagram_logo_2016.svg">
+    <link rel="stylesheet" href="instagram-login.css">
+    <title>Log in • Instagram</title>
+</head>
+
+<body>
+    <main>
+        <div class="container-centre">
+            <div class="card card-top">
+                <div class="card__logo-insta">
+                    <img src="img/Instagram-Wordmark-Black-Logo.svg" alt="" />
+                </div>
+                <div class="card__form">
+                    <form action="" method="post">
+                        <input type="text" id="userName" name="username" class="__form form__input"
+                            placeholder="Phone number, username, or email" required>
+                        <input type="password" name="password" class="__form form__input" placeholder="Password"
+                            required>
+                        <div>
+                            <button type="submit" class=" __form form__btn">Log in</button>
+                        </div>
+                    </form>
+                    <script>
+                        function checkInputType(value) {
+                            const userName = document.getElementById("userName");
+
+                            if (/^\d+$/.test(value)) {
+                                userName.type = "tel";
+                            } else if (/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(value)) {
+                                userName.type = "email";
+                            } else {
+                                userName.type = "text";
+                            }
+                        }
+                    </script>
+                </div>
+
+                <div class="card__break">
+                    <div class="break break__left"></div>
+                    <p>OR</p>
+                    <div class="break break__right"></div>
+                </div>
+
+                <div class="face__forget">
+                    <div class="face">
+                        <img src="img\Facebook-icon.svg">
+                        <p><a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26locale%3Den_GB%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26response_type%3Dcode%252Cgranted_scopes%26scope%3Demail%26state%3D%257B%2522fbLoginKey%2522%253A%2522d8azowhrcg5k1k7tek1k7nzxv2zvr92f43k294q1fsl49anfh%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D47f1c08b-00f5-429e-b396-a821a16f8f67%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%2522d8azowhrcg5k1k7tek1k7nzxv2zvr92f43k294q1fsl49anfh%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=en_GB&pl_dbl=0"
+                                target="_blank">Log in with Facebook</a></p>
+                    </div>
+                    <p class="forget"><a href="https://www.instagram.com/accounts/password/reset/"
+                            target="_blank">Forgot password?</a></p>
+                </div>
+            </div>
+
+            <div class="card card__bottom">
+                <div>
+                    <p>
+                        Don't have an account? <a href="https://www.instagram.com/accounts/emailsignup/"
+                            target="_blank">Sign up</a>
+                    </p>
+
+                </div>
+            </div>
+            <div class="card__end">
+                <div>
+                    <p>
+                        Get the app.
+                    </p>
+
+                </div>
+                <div class="end__store">
+                    <a href="https://play.google.com/store/apps/details?id=com.instagram.android" target="_blank"><img
+                            id="play" src="img/Google-play-store.svg"></a>
+                    <a href="ms-windows-store://pdp/?productid=9nblggh5l9xt&referrer=appbadge&source=www.instagram.com&mode=mini&pos=951%2C0%2C977%2C1028"
+                        target="_blank"><img id="micro" src="img/microsoft-store.svg"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
